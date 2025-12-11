@@ -1,7 +1,5 @@
 # Example 
 
-## Why code duplication appears
-
 Chunk splitting config:
 
 ```ts
