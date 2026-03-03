@@ -1,15 +1,15 @@
 {
   "configurations": [
     {
-      "type": "lldb",
+      "type": "codelldb",
       "request": "launch",
       "name": "Debug Rspack",
       "program": "node",
       "args": [
         "packages/rspack-cli/bin/rspack.js",
-        "${input:rspackCommand}",
+        "build",
         "-c",
-        "${input:rspackConfigPath}"
+        "examples/split-chunks-problematic-nodes/rspack.config.cjs"
       ],
       "cwd": "${workspaceFolder}"
     },

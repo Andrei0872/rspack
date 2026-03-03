@@ -1,0 +1,13 @@
+.foo {
+	display: block;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+}
+
+.bio {
+	text-align: center;
+	font-weight: bold;
+}

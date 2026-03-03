@@ -28,40 +28,19 @@ const cfg1 = defineConfig({
 				defaultVendors: false,
 				vendor: {
 					chunks: "async",
-					minSize: 0,
-					minChunks: 2,
-					usedExports: true
+					minChunks: 1,
+					maxAsyncSize: 100,
+					minSize: 60
 				}
 			}
 		}
 		// splitChunks: false
 	},
 	experiments: {
-		outputModule: true
+		outputModule: true,
+    css: true
 	},
-	devtool: "source-map",
-	// devtool: "cheap-source-map",
-	plugins: [
-		// false &&
-		// process.env.RSDOCTOR &&
-		// new RsdoctorRspackPlugin({
-		// 	mode: "normal",
-		// 	// brief: {
-		// 	// 	writeDataJson: true
-		// 	// },
-		// 	output: {
-		// 		options: {
-		// 			type: ["json", "html"]
-		// 		}
-		// 	},
-		// 	supports: {
-		// 		banner: true,
-		// 		parseBundle: false,
-		// 		gzip: false
-		// 	},
-		// 	experiments: { enableNativePlugin: true }
-		// })
-	]
+	devtool: "source-map"
 });
 
 module.exports = cfg1;
