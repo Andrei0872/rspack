@@ -4,6 +4,7 @@ import { rspack } from '@rspack/core';
 
 export default defineConfig({
   context: import.meta.dirname,
+  mode: 'development',
   entry: {
     index: './src/index.js',
   },

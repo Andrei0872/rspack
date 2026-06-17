@@ -99,6 +99,7 @@ web_modules/
 
 # Dist files
 dist
+!examples/*/dist
 compiled
 webpack-dist
 
